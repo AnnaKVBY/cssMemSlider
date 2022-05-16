@@ -19,13 +19,13 @@ body{
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center; 
+    width: 1440px;  
 }
 
 .main{
-    margin: 20px auto;
- 
-}
+    margin: 20px auto;   
+ }
 
 .images{
     display: flex;  
@@ -120,3 +120,30 @@ p {
     }
 }
 
+@media only screen and (max-width: 620px) {   
+    .body {
+        width: 580px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .images img {
+        height: 300px; 
+        width: 70%;    
+        margin: 0 auto;           
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+   
+    .text {
+        width: 350px;
+        order: 2;        
+    }
+    p {        
+        font-size: 15px;   
+        margin-top: 10px;
+    }
+
+}

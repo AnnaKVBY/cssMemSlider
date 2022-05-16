@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;    
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+     font-family: "Roboto", sans-serif; 
+     font-size: 20px;  
+     font-style: normal;
+     font-weight: normal;
+     line-height: 35px;
+     color: white;     
+}
+
+.body {
+    background-color: rgb(17, 16, 28); 
+    /* height: 100vh;   */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.main{
+    margin: 20px auto;
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;     
+}
+
+
+.images img {
+   height: 700px;
+    width:100%;
+    transition: opacity 0.2s ease-in;
+    border-radius: 30px;      
+}
+
+.images input {
+    display: none;
+}
+
+.about{
+    display: flex;
+    margin-top: 40px;
+}
+
+.controls{
+    display: flex;
+    margin: 5px;
+}
+
+.controls label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid rgb(176, 171, 214) 3px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    margin: 5px;
+}
+
+.controls label:hover{
+    background: rgb(113, 107, 170); 
+    border: solid rgb(113, 107, 170) 3px;
+}
+
+#img1:checked ~ .img-1 {
+    margin-left: 0;
+}
+
+#img2:checked ~ .img-2 {
+    margin-left: -100%;
+    opacity: 1;
+}
+
+#img3:checked ~ .img-3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .img-4 {
+    margin-left: -300%;
+}
+
+#img5:checked ~ .img-5 {
+    margin-left: -400%;
+}
+
+#img1:checked ~ .controls label:nth-child(1),
+#img2:checked ~ .controls label:nth-child(2),
+#img3:checked ~ .controls label:nth-child(3),
+#img4:checked ~ .controls label:nth-child(4),
+#img5:checked ~ .controls label:nth-child(5){
+    background: rgb(113, 107, 170); 
+    border: solid rgb(113, 107, 170) 3px;
+}

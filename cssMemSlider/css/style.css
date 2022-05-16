@@ -21,6 +21,7 @@ body{
     justify-content: center;
     align-items: center; 
     width: 1440px;  
+    margin: 0 auto;
 }
 
 .main{
@@ -57,25 +58,33 @@ body{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: solid rgb(176, 171, 214) 3px;
+    background: rgb(113, 107, 170); 
+    border: solid rgb(113, 107, 170) 3px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     margin: 5px;    
 }
 
-.img-label:hover{
-    background: rgb(113, 107, 170); 
-    border: solid rgb(113, 107, 170) 3px;
+.img-label:hover{    
+    background: rgb(150, 213, 208); 
+    border: solid rgb(150, 213, 208) 3px;
 }
 
-.img-label:active{
-    background: rgb(113, 107, 170); 
-    border: solid rgb(113, 107, 170) 3px;
+#img1:checked ~ .about .img-label:nth-of-type(1),
+#img2:checked ~ .about .img-label:nth-of-type(2),
+#img3:checked ~ .about .img-label:nth-of-type(3),
+#img4:checked ~ .about .img-label:nth-of-type(4),
+#img5:checked ~ .about .img-label:nth-of-type(5){
+    border: solid rgb(176, 171, 214) 3px;   
+    background-color: transparent;
 }
 
-.img-input:checked + .img-label {
-    background: rgb(113, 107, 170); 
-    border: solid rgb(113, 107, 170) 3px;
+#img1:checked ~ .about  .img-label:hover,
+#img2:checked ~ .about .img-label:hover,
+#img3:checked ~ .about .img-label:hover,
+#img4:checked ~ .about  .img-label:hover,
+#img5:checked ~ .about  .img-label:hover{   
+    border: solid rgb(150, 213, 208) 3px;
 }
 
 p {
@@ -128,7 +137,7 @@ p {
     }
 
     .images img {
-        height: 300px; 
+        height: 50%; 
         width: 70%;    
         margin: 0 auto;           
     }
@@ -145,5 +154,4 @@ p {
         font-size: 15px;   
         margin-top: 10px;
     }
-
 }

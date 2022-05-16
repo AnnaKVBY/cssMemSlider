@@ -86,7 +86,6 @@ body{
 #img5:checked ~ .about  .img-label:hover{   
     border: solid rgb(150, 213, 208) 3px;
 }
-
 p {
     margin: 0;
 }
@@ -155,3 +154,5 @@ p {
         margin-top: 10px;
     }
 }
+
+

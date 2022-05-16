@@ -33,8 +33,7 @@ body{
 }
 
 .images img {
-    height: 700px;
-    /* width:100%;     */
+    height: 700px;    
     border-radius: 30px;      
 }
 
@@ -54,7 +53,7 @@ body{
     margin: 5px;
 }
 
-.controls label {
+.img-label {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -64,7 +63,17 @@ body{
     margin: 5px;    
 }
 
-.controls label:hover{
+.img-label:hover{
+    background: rgb(113, 107, 170); 
+    border: solid rgb(113, 107, 170) 3px;
+}
+
+.img-label:active{
+    background: rgb(113, 107, 170); 
+    border: solid rgb(113, 107, 170) 3px;
+}
+
+.img-input:checked + .img-label {
     background: rgb(113, 107, 170); 
     border: solid rgb(113, 107, 170) 3px;
 }
